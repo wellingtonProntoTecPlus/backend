@@ -1,0 +1,49 @@
+{
+  "query": "SELECT id, openId, name, email, phone, city, state, addressStreet, addressNeighborhood, avatarUrl, mode FROM users;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute SELECT id, openId, name, email, phone, city, state, addressStreet, addressNeighborhood, avatarUrl, mode FROM users;",
+  "rows": [
+    {
+      "id": "1",
+      "openId": "email:wellingtonportes@gmail.com",
+      "name": "David Portes",
+      "email": "wellingtonportes@gmail.com",
+      "phone": "NULL",
+      "city": "NULL",
+      "state": "NULL",
+      "addressStreet": "NULL",
+      "addressNeighborhood": "NULL",
+      "avatarUrl": "NULL",
+      "mode": "cliente"
+    },
+    {
+      "id": "30004",
+      "openId": "email:silvana.araujosantana@gmail.com",
+      "name": "Silvana Portes",
+      "email": "silvana.araujosantana@gmail.com",
+      "phone": "NULL",
+      "city": "NULL",
+      "state": "NULL",
+      "addressStreet": "NULL",
+      "addressNeighborhood": "NULL",
+      "avatarUrl": "https://d2xsxph8kpxj0f.cloudfront.net/310519663035703454/46LmJmiSfC24yo7uAjFVfV/avatars/user-30004-c9ao4g.jpeg",
+      "mode": "cliente"
+    },
+    {
+      "id": "90001",
+      "openId": "email:wellington@policeservice.com.br",
+      "name": "David Portes",
+      "email": "wellington@policeservice.com.br",
+      "phone": "NULL",
+      "city": "NULL",
+      "state": "NULL",
+      "addressStreet": "NULL",
+      "addressNeighborhood": "NULL",
+      "avatarUrl": "https://d2xsxph8kpxj0f.cloudfront.net/310519663035703454/46LmJmiSfC24yo7uAjFVfV/avatars/user-90001-sy01s9.jpeg",
+      "mode": "cliente"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\topenId\tname\temail\tphone\tcity\tstate\taddressStreet\taddressNeighborhood\tavatarUrl\tmode\n1\temail:wellingtonportes@gmail.com\tDavid Portes\twellingtonportes@gmail.com\tNULL\tNULL\tNULL\tNULL\tNULL\tNULL\tcliente\n30004\temail:silvana.araujosantana@gmail.com\tSilvana Portes\tsilvana.araujosantana@gmail.com\tNULL\tNULL\tNULL\tNULL\tNULL\thttps://d2xsxph8kpxj0f.cloudfront.net/310519663035703454/46LmJmiSfC24yo7uAjFVfV/avatars/user-30004-c9ao4g.jpeg\tcliente\n90001\temail:wellington@policeservice.com.br\tDavid Portes\twellington@policeservice.com.br\tNULL\tNULL\tNULL\tNULL\tNULL\thttps://d2xsxph8kpxj0f.cloudfront.net/310519663035703454/46LmJmiSfC24yo7uAjFVfV/avatars/user-90001-sy01s9.jpeg\tcliente\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

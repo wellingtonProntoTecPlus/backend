@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS chat_last_seen (\n  userId INT NOT NULL,\n  requestId INT NOT NULL,\n  lastSeenId INT NOT NULL DEFAULT 0,\n  updatedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n  PRIMARY KEY (userId, requestId)\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute CREATE TABLE IF NOT EXISTS chat_last_seen (\n  userId INT NOT NULL,\n  requestId INT NOT NULL,\n  lastSeenId INT NOT NULL DEFAULT 0,\n  updatedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n  PRIMARY KEY (userId, requestId)\n);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 121
+}

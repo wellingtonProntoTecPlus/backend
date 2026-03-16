@@ -1,0 +1,109 @@
+{
+  "query": "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'technicians' ORDER BY ORDINAL_POSITION;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'technicians' ORDER BY ORDINAL_POSITION;",
+  "rows": [
+    {
+      "COLUMN_NAME": "id"
+    },
+    {
+      "COLUMN_NAME": "userId"
+    },
+    {
+      "COLUMN_NAME": "name"
+    },
+    {
+      "COLUMN_NAME": "companyName"
+    },
+    {
+      "COLUMN_NAME": "document"
+    },
+    {
+      "COLUMN_NAME": "phone"
+    },
+    {
+      "COLUMN_NAME": "whatsapp"
+    },
+    {
+      "COLUMN_NAME": "description"
+    },
+    {
+      "COLUMN_NAME": "city"
+    },
+    {
+      "COLUMN_NAME": "state"
+    },
+    {
+      "COLUMN_NAME": "addressStreet"
+    },
+    {
+      "COLUMN_NAME": "addressNumber"
+    },
+    {
+      "COLUMN_NAME": "addressComplement"
+    },
+    {
+      "COLUMN_NAME": "addressNeighborhood"
+    },
+    {
+      "COLUMN_NAME": "addressZipCode"
+    },
+    {
+      "COLUMN_NAME": "addressLat"
+    },
+    {
+      "COLUMN_NAME": "addressLng"
+    },
+    {
+      "COLUMN_NAME": "type"
+    },
+    {
+      "COLUMN_NAME": "badge"
+    },
+    {
+      "COLUMN_NAME": "level"
+    },
+    {
+      "COLUMN_NAME": "availability"
+    },
+    {
+      "COLUMN_NAME": "avatarUrl"
+    },
+    {
+      "COLUMN_NAME": "photoUri"
+    },
+    {
+      "COLUMN_NAME": "specialties"
+    },
+    {
+      "COLUMN_NAME": "rating"
+    },
+    {
+      "COLUMN_NAME": "totalReviews"
+    },
+    {
+      "COLUMN_NAME": "totalServices"
+    },
+    {
+      "COLUMN_NAME": "yearsExperience"
+    },
+    {
+      "COLUMN_NAME": "planType"
+    },
+    {
+      "COLUMN_NAME": "isActive"
+    },
+    {
+      "COLUMN_NAME": "createdAt"
+    },
+    {
+      "COLUMN_NAME": "updatedAt"
+    },
+    {
+      "COLUMN_NAME": "companyLogoUrl"
+    }
+  ],
+  "messages": [],
+  "stdout": "COLUMN_NAME\nid\nuserId\nname\ncompanyName\ndocument\nphone\nwhatsapp\ndescription\ncity\nstate\naddressStreet\naddressNumber\naddressComplement\naddressNeighborhood\naddressZipCode\naddressLat\naddressLng\ntype\nbadge\nlevel\navailability\navatarUrl\nphotoUri\nspecialties\nrating\ntotalReviews\ntotalServices\nyearsExperience\nplanType\nisActive\ncreatedAt\nupdatedAt\ncompanyLogoUrl\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

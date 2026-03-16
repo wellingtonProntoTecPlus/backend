@@ -1,0 +1,32 @@
+{
+  "query": "SELECT * FROM push_tokens; SELECT id, name, email FROM users ORDER BY id DESC LIMIT 10; SELECT id, clientId, technicianId, status FROM serviceRequests ORDER BY id DESC LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute SELECT * FROM push_tokens; SELECT id, name, email FROM users ORDER BY id DESC LIMIT 10; SELECT id, clientId, technicianId, status FROM serviceRequests ORDER BY id DESC LIMIT 5;",
+  "rows": [
+    {
+      "id": "780008",
+      "name": "Maria De Nazaré",
+      "email": "financeiropolice@gmail.com"
+    },
+    {
+      "id": "721901",
+      "name": "David Portes",
+      "email": "dav.portes@gmail.com"
+    },
+    {
+      "id": "720357",
+      "name": "Silvana De Araujo Santana",
+      "email": "silvana.araujosantana@gmail.com"
+    }
+  ],
+  "messages": [
+    "id\tclientId\ttechnicianId\tstatus",
+    "300001\t780008\t150004\tem_analise",
+    "270003\t780008\tNULL\tsolicitado",
+    "270002\t720357\tNULL\tsolicitado",
+    "270001\t780008\t150004\tem_analise",
+    "240001\t780008\t150004\tem_analise"
+  ],
+  "stdout": "id\tname\temail\n780008\tMaria De Nazaré\tfinanceiropolice@gmail.com\n721901\tDavid Portes\tdav.portes@gmail.com\n720357\tSilvana De Araujo Santana\tsilvana.araujosantana@gmail.com\nid\tclientId\ttechnicianId\tstatus\n300001\t780008\t150004\tem_analise\n270003\t780008\tNULL\tsolicitado\n270002\t720357\tNULL\tsolicitado\n270001\t780008\t150004\tem_analise\n240001\t780008\t150004\tem_analise\n",
+  "stderr": "",
+  "execution_time_ms": 78
+}

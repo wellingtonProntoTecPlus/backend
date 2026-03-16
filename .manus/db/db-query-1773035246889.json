@@ -1,0 +1,25 @@
+{
+  "query": "SELECT COUNT(*) as total_requests FROM serviceRequests; SELECT COUNT(*) as total_messages FROM chatMessages; SELECT COUNT(*) as total_reviews FROM reviews;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute SELECT COUNT(*) as total_requests FROM serviceRequests; SELECT COUNT(*) as total_messages FROM chatMessages; SELECT COUNT(*) as total_reviews FROM reviews;",
+  "rows": [
+    {
+      "total_requests": "1"
+    },
+    {
+      "total_requests": "total_messages"
+    },
+    {
+      "total_requests": "4"
+    },
+    {
+      "total_requests": "total_reviews"
+    },
+    {
+      "total_requests": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_requests\n1\ntotal_messages\n4\ntotal_reviews\n0\n",
+  "stderr": "",
+  "execution_time_ms": 59
+}

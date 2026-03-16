@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS push_tokens (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  userId INT NOT NULL,\n  token VARCHAR(255) NOT NULL,\n  platform VARCHAR(20) DEFAULT 'unknown',\n  createdAt TIMESTAMP NOT NULL DEFAULT NOW(),\n  updatedAt TIMESTAMP NOT NULL DEFAULT NOW() ON UPDATE NOW(),\n  UNIQUE KEY unique_user_token (userId, token)\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute CREATE TABLE IF NOT EXISTS push_tokens (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  userId INT NOT NULL,\n  token VARCHAR(255) NOT NULL,\n  platform VARCHAR(20) DEFAULT 'unknown',\n  createdAt TIMESTAMP NOT NULL DEFAULT NOW(),\n  updatedAt TIMESTAMP NOT NULL DEFAULT NOW() ON UPDATE NOW(),\n  UNIQUE KEY unique_user_token (userId, token)\n);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 116
+}

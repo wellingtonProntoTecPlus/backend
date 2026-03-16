@@ -1,0 +1,8 @@
+{
+  "query": "SELECT u.id, u.email, u.name, u.createdAt, t.id as techId, t.specialty, t.availability FROM users u LEFT JOIN technicians t ON t.userId = u.id ORDER BY u.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute SELECT u.id, u.email, u.name, u.createdAt, t.id as techId, t.specialty, t.availability FROM users u LEFT JOIN technicians t ON t.userId = u.id ORDER BY u.id;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 't.specialty' in 'field list'"
+  ]
+}

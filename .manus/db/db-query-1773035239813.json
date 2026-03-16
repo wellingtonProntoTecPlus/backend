@@ -1,0 +1,26 @@
+{
+  "query": "SELECT id, openId, name, email, loginMethod, createdAt FROM users ORDER BY createdAt DESC LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute SELECT id, openId, name, email, loginMethod, createdAt FROM users ORDER BY createdAt DESC LIMIT 20;",
+  "rows": [
+    {
+      "id": "721600",
+      "openId": "email:financeiropolice@gmail.com",
+      "name": "Marcello Moraes",
+      "email": "financeiropolice@gmail.com",
+      "loginMethod": "email",
+      "createdAt": "2026-03-09 05:41:10"
+    },
+    {
+      "id": "720357",
+      "openId": "email:silvana.araujosantana@gmail.com",
+      "name": "Silvana De Araujo Santana",
+      "email": "silvana.araujosantana@gmail.com",
+      "loginMethod": "email",
+      "createdAt": "2026-03-09 04:40:04"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\topenId\tname\temail\tloginMethod\tcreatedAt\n721600\temail:financeiropolice@gmail.com\tMarcello Moraes\tfinanceiropolice@gmail.com\temail\t2026-03-09 05:41:10\n720357\temail:silvana.araujosantana@gmail.com\tSilvana De Araujo Santana\tsilvana.araujosantana@gmail.com\temail\t2026-03-09 04:40:04\n",
+  "stderr": "",
+  "execution_time_ms": 215
+}

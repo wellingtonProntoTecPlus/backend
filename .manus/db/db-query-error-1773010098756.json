@@ -1,0 +1,8 @@
+{
+  "query": "SELECT id, name, company_name, technician_type, photo_uri, company_logo_url, badge FROM technicians LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute SELECT id, name, company_name, technician_type, photo_uri, company_logo_url, badge FROM technicians LIMIT 5;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'company_name' in 'field list'"
+  ]
+}

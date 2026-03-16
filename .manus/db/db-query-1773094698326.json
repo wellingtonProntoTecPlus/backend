@@ -1,0 +1,58 @@
+{
+  "query": "SELECT id, name, email FROM users; SELECT id, userId, name FROM technicians; SELECT id, clientId, technicianId, status FROM serviceRequests; SELECT id, requestId, senderId, senderName, LEFT(content,30) as content, isRead FROM chatMessages ORDER BY id DESC LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute SELECT id, name, email FROM users; SELECT id, userId, name FROM technicians; SELECT id, clientId, technicianId, status FROM serviceRequests; SELECT id, requestId, senderId, senderName, LEFT(content,30) as content, isRead FROM chatMessages ORDER BY id DESC LIMIT 10;",
+  "rows": [
+    {
+      "id": "720357",
+      "name": "Silvana De Araujo Santana",
+      "email": "silvana.araujosantana@gmail.com"
+    },
+    {
+      "id": "721901",
+      "name": "David Portes",
+      "email": "dav.portes@gmail.com"
+    },
+    {
+      "id": "780008",
+      "name": "Maria De Nazaré",
+      "email": "financeiropolice@gmail.com"
+    },
+    {
+      "id": "id",
+      "name": "userId",
+      "email": "name"
+    },
+    {
+      "id": "150004",
+      "name": "721901",
+      "email": "David Portes"
+    }
+  ],
+  "messages": [
+    "id\tclientId\ttechnicianId\tstatus",
+    "150002\t720357\t150002\taguardando_confirmacao",
+    "180001\t780008\t150004\tem_analise",
+    "210001\t780008\t150004\tem_analise",
+    "210002\t780008\t150004\tem_analise",
+    "210003\t780008\t150004\tem_analise",
+    "240001\t780008\t150004\tem_analise",
+    "270001\t780008\t150004\tem_analise",
+    "270002\t720357\tNULL\tsolicitado",
+    "270003\t780008\tNULL\tsolicitado",
+    "300001\t780008\t150004\tem_analise",
+    "id\trequestId\tsenderId\tsenderName\tcontent\tisRead",
+    "270002\t300001\t780008\tMaria De Nazaré\tOk\t1",
+    "270001\t300001\t721901\tDavid Portes\tOk\t1",
+    "240005\t150002\t720357\tSilvana De Araujo Santana\tOla\t1",
+    "240004\t270001\t721901\tDavid Portes\tVbb\t1",
+    "240003\t270001\t721901\tDavid Portes\tGhggj\t1",
+    "240002\t270001\t780008\tMaria De Nazaré\tGyuu\t1",
+    "240001\t270001\t780008\tMaria De Nazaré\tGisiei\t1",
+    "210004\t240001\t780008\tMaria De Nazaré\t0l\t1",
+    "210003\t240001\t721901\tDavid Portes\tOi\t1",
+    "210002\t240001\t780008\tMaria De Nazaré\tOi\t1"
+  ],
+  "stdout": "id\tname\temail\n720357\tSilvana De Araujo Santana\tsilvana.araujosantana@gmail.com\n721901\tDavid Portes\tdav.portes@gmail.com\n780008\tMaria De Nazaré\tfinanceiropolice@gmail.com\nid\tuserId\tname\n150004\t721901\tDavid Portes\nid\tclientId\ttechnicianId\tstatus\n150002\t720357\t150002\taguardando_confirmacao\n180001\t780008\t150004\tem_analise\n210001\t780008\t150004\tem_analise\n210002\t780008\t150004\tem_analise\n210003\t780008\t150004\tem_analise\n240001\t780008\t150004\tem_analise\n270001\t780008\t150004\tem_analise\n270002\t720357\tNULL\tsolicitado\n270003\t780008\tNULL\tsolicitado\n300001\t780008\t150004\tem_analise\nid\trequestId\tsenderId\tsenderName\tcontent\tisRead\n270002\t300001\t780008\tMaria De Nazaré\tOk\t1\n270001\t300001\t721901\tDavid Portes\tOk\t1\n240005\t150002\t720357\tSilvana De Araujo Santana\tOla\t1\n240004\t270001\t721901\tDavid Portes\tVbb\t1\n240003\t270001\t721901\tDavid Portes\tGhggj\t1\n240002\t270001\t780008\tMaria De Nazaré\tGyuu\t1\n240001\t270001\t780008\tMaria De Nazaré\tGisiei\t1\n210004\t240001\t780008\tMaria De Nazaré\t0l\t1\n210003\t240001\t721901\tDavid Portes\tOi\t1\n210002\t240001\t780008\tMaria De Nazaré\tOi\t1\n",
+  "stderr": "",
+  "execution_time_ms": 67
+}

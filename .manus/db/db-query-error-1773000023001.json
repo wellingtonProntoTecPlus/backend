@@ -1,0 +1,12 @@
+{
+  "query": "SELECT COUNT(*) as total_technicians FROM technicians; SELECT COUNT(*) as total_users FROM users; SELECT COUNT(*) as total_requests FROM service_requests; SELECT COUNT(*) as total_reviews FROM reviews; SELECT COUNT(*) as total_messages FROM chat_messages;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute SELECT COUNT(*) as total_technicians FROM technicians; SELECT COUNT(*) as total_users FROM users; SELECT COUNT(*) as total_requests FROM service_requests; SELECT COUNT(*) as total_reviews FROM reviews; SELECT COUNT(*) as total_messages FROM chat_messages;",
+  "returncode": 1,
+  "logs": [
+    "total_technicians",
+    "1",
+    "total_users",
+    "2",
+    "ERROR 1146 (42S02) at line 1: Table '46lmjmisfc24yo7uajfvfv.service_requests' doesn't exist"
+  ]
+}

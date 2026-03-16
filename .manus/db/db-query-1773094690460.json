@@ -1,0 +1,28 @@
+{
+  "query": "SELECT u.id as userId, u.name, u.email, t.id as techId FROM users u LEFT JOIN technicians t ON t.userId = u.id ORDER BY u.id DESC LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute SELECT u.id as userId, u.name, u.email, t.id as techId FROM users u LEFT JOIN technicians t ON t.userId = u.id ORDER BY u.id DESC LIMIT 10;",
+  "rows": [
+    {
+      "userId": "780008",
+      "name": "Maria De Nazaré",
+      "email": "financeiropolice@gmail.com",
+      "techId": "NULL"
+    },
+    {
+      "userId": "721901",
+      "name": "David Portes",
+      "email": "dav.portes@gmail.com",
+      "techId": "150004"
+    },
+    {
+      "userId": "720357",
+      "name": "Silvana De Araujo Santana",
+      "email": "silvana.araujosantana@gmail.com",
+      "techId": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "userId\tname\temail\ttechId\n780008\tMaria De Nazaré\tfinanceiropolice@gmail.com\tNULL\n721901\tDavid Portes\tdav.portes@gmail.com\t150004\n720357\tSilvana De Araujo Santana\tsilvana.araujosantana@gmail.com\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 71
+}

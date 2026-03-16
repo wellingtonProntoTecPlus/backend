@@ -1,0 +1,46 @@
+{
+  "query": "SELECT u.id, u.email, u.name, u.createdAt, t.id as techId, t.name as techName, t.availability FROM users u LEFT JOIN technicians t ON t.userId = u.id ORDER BY u.id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute SELECT u.id, u.email, u.name, u.createdAt, t.id as techId, t.name as techName, t.availability FROM users u LEFT JOIN technicians t ON t.userId = u.id ORDER BY u.id;",
+  "rows": [
+    {
+      "id": "1",
+      "email": "wellingtonportes@gmail.com",
+      "name": "David Portes",
+      "createdAt": "2026-03-07 02:26:42",
+      "techId": "NULL",
+      "techName": "NULL",
+      "availability": "NULL"
+    },
+    {
+      "id": "30004",
+      "email": "silvana.araujosantana@gmail.com",
+      "name": "Silvana Portes",
+      "createdAt": "2026-03-07 04:12:05",
+      "techId": "NULL",
+      "techName": "NULL",
+      "availability": "NULL"
+    },
+    {
+      "id": "90001",
+      "email": "wellington@policeservice.com.br",
+      "name": "David Portes",
+      "createdAt": "2026-03-07 17:42:00",
+      "techId": "1",
+      "techName": "David Portes",
+      "availability": "disponivel"
+    },
+    {
+      "id": "360039",
+      "email": "financeiropolice@gmail.com",
+      "name": "Wellington Portes",
+      "createdAt": "2026-03-08 04:42:50",
+      "techId": "NULL",
+      "techName": "NULL",
+      "availability": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\temail\tname\tcreatedAt\ttechId\ttechName\tavailability\n1\twellingtonportes@gmail.com\tDavid Portes\t2026-03-07 02:26:42\tNULL\tNULL\tNULL\n30004\tsilvana.araujosantana@gmail.com\tSilvana Portes\t2026-03-07 04:12:05\tNULL\tNULL\tNULL\n90001\twellington@policeservice.com.br\tDavid Portes\t2026-03-07 17:42:00\t1\tDavid Portes\tdisponivel\n360039\tfinanceiropolice@gmail.com\tWellington Portes\t2026-03-08 04:42:50\tNULL\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

@@ -1,0 +1,274 @@
+{
+  "query": "DESCRIBE technicians;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute DESCRIBE technicians;",
+  "rows": [
+    {
+      "Field": "id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": "NULL",
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "userId",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "name",
+      "Type": "varchar(255)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "companyName",
+      "Type": "varchar(255)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "document",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "phone",
+      "Type": "varchar(20)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "whatsapp",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "description",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "city",
+      "Type": "varchar(100)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "state",
+      "Type": "varchar(2)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "addressStreet",
+      "Type": "varchar(255)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "addressNumber",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "addressComplement",
+      "Type": "varchar(100)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "addressNeighborhood",
+      "Type": "varchar(100)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "addressZipCode",
+      "Type": "varchar(10)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "addressLat",
+      "Type": "decimal(10,7)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "addressLng",
+      "Type": "decimal(10,7)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "type",
+      "Type": "enum('empresa','autonomo','certificada')",
+      "Null": "NO",
+      "Key": "",
+      "Default": "autonomo",
+      "Extra": ""
+    },
+    {
+      "Field": "badge",
+      "Type": "enum('verificado','autonomo','certificada')",
+      "Null": "NO",
+      "Key": "",
+      "Default": "autonomo",
+      "Extra": ""
+    },
+    {
+      "Field": "level",
+      "Type": "enum('autonomo','empresa_verificada','parceiro_prontotec')",
+      "Null": "NO",
+      "Key": "",
+      "Default": "autonomo",
+      "Extra": ""
+    },
+    {
+      "Field": "availability",
+      "Type": "enum('disponivel','agenda_cheia','indisponivel')",
+      "Null": "NO",
+      "Key": "",
+      "Default": "disponivel",
+      "Extra": ""
+    },
+    {
+      "Field": "avatarUrl",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "photoUri",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "specialties",
+      "Type": "json",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "rating",
+      "Type": "decimal(3,2)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "5.00",
+      "Extra": ""
+    },
+    {
+      "Field": "totalReviews",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "totalServices",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "yearsExperience",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "planType",
+      "Type": "enum('basico','destaque','gratuito')",
+      "Null": "NO",
+      "Key": "",
+      "Default": "gratuito",
+      "Extra": ""
+    },
+    {
+      "Field": "isActive",
+      "Type": "tinyint(1)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "1",
+      "Extra": ""
+    },
+    {
+      "Field": "createdAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": ""
+    },
+    {
+      "Field": "updatedAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+    },
+    {
+      "Field": "companyLogoUrl",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    }
+  ],
+  "messages": [],
+  "stdout": "Field\tType\tNull\tKey\tDefault\tExtra\nid\tint\tNO\tPRI\tNULL\tauto_increment\nuserId\tint\tNO\t\tNULL\t\nname\tvarchar(255)\tNO\t\tNULL\t\ncompanyName\tvarchar(255)\tYES\t\tNULL\t\ndocument\tvarchar(20)\tYES\t\tNULL\t\nphone\tvarchar(20)\tNO\t\tNULL\t\nwhatsapp\tvarchar(20)\tYES\t\tNULL\t\ndescription\ttext\tYES\t\tNULL\t\ncity\tvarchar(100)\tNO\t\tNULL\t\nstate\tvarchar(2)\tNO\t\tNULL\t\naddressStreet\tvarchar(255)\tYES\t\tNULL\t\naddressNumber\tvarchar(20)\tYES\t\tNULL\t\naddressComplement\tvarchar(100)\tYES\t\tNULL\t\naddressNeighborhood\tvarchar(100)\tYES\t\tNULL\t\naddressZipCode\tvarchar(10)\tYES\t\tNULL\t\naddressLat\tdecimal(10,7)\tYES\t\tNULL\t\naddressLng\tdecimal(10,7)\tYES\t\tNULL\t\ntype\tenum('empresa','autonomo','certificada')\tNO\t\tautonomo\t\nbadge\tenum('verificado','autonomo','certificada')\tNO\t\tautonomo\t\nlevel\tenum('autonomo','empresa_verificada','parceiro_prontotec')\tNO\t\tautonomo\t\navailability\tenum('disponivel','agenda_cheia','indisponivel')\tNO\t\tdisponivel\t\navatarUrl\ttext\tYES\t\tNULL\t\nphotoUri\ttext\tYES\t\tNULL\t\nspecialties\tjson\tNO\t\tNULL\t\nrating\tdecimal(3,2)\tYES\t\t5.00\t\ntotalReviews\tint\tNO\t\t0\t\ntotalServices\tint\tNO\t\t0\t\nyearsExperience\tint\tNO\t\t0\t\nplanType\tenum('basico','destaque','gratuito')\tNO\t\tgratuito\t\nisActive\ttinyint(1)\tNO\t\t1\t\ncreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\t\nupdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\tDEFAULT_GENERATED on update CURRENT_TIMESTAMP\ncompanyLogoUrl\ttext\tYES\t\tNULL\t\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

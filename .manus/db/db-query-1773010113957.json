@@ -1,0 +1,19 @@
+{
+  "query": "SELECT id, name, companyName, type, photoUri, companyLogoUrl, badge FROM technicians LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute SELECT id, name, companyName, type, photoUri, companyLogoUrl, badge FROM technicians LIMIT 5;",
+  "rows": [
+    {
+      "id": "90001",
+      "name": "David Portes",
+      "companyName": "David Portões Eletrônicos",
+      "type": "empresa",
+      "photoUri": "https://d2xsxph8kpxj0f.cloudfront.net/310519663035703454/46LmJmiSfC24yo7uAjFVfV/technicians/photo-630001-doilhg.jpeg",
+      "companyLogoUrl": "https://d2xsxph8kpxj0f.cloudfront.net/310519663035703454/46LmJmiSfC24yo7uAjFVfV/technicians/photo-630001-5nn4y4.jpeg",
+      "badge": "verificado"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tcompanyName\ttype\tphotoUri\tcompanyLogoUrl\tbadge\n90001\tDavid Portes\tDavid Portões Eletrônicos\tempresa\thttps://d2xsxph8kpxj0f.cloudfront.net/310519663035703454/46LmJmiSfC24yo7uAjFVfV/technicians/photo-630001-doilhg.jpeg\thttps://d2xsxph8kpxj0f.cloudfront.net/310519663035703454/46LmJmiSfC24yo7uAjFVfV/technicians/photo-630001-5nn4y4.jpeg\tverificado\n",
+  "stderr": "",
+  "execution_time_ms": 53
+}

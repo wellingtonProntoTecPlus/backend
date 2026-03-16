@@ -1,0 +1,80 @@
+{
+  "query": "SELECT requestId, senderId, senderName, content, isRead FROM chatMessages ORDER BY id DESC LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4Tb2iuuSbcoWD4f.73165420bf26 --database 46LmJmiSfC24yo7uAjFVfV --execute SELECT requestId, senderId, senderName, content, isRead FROM chatMessages ORDER BY id DESC LIMIT 10;",
+  "rows": [
+    {
+      "requestId": "300001",
+      "senderId": "780008",
+      "senderName": "Maria De Nazaré",
+      "content": "Ok",
+      "isRead": "1"
+    },
+    {
+      "requestId": "300001",
+      "senderId": "721901",
+      "senderName": "David Portes",
+      "content": "Ok",
+      "isRead": "1"
+    },
+    {
+      "requestId": "150002",
+      "senderId": "720357",
+      "senderName": "Silvana De Araujo Santana",
+      "content": "Ola",
+      "isRead": "1"
+    },
+    {
+      "requestId": "270001",
+      "senderId": "721901",
+      "senderName": "David Portes",
+      "content": "Vbb",
+      "isRead": "1"
+    },
+    {
+      "requestId": "270001",
+      "senderId": "721901",
+      "senderName": "David Portes",
+      "content": "Ghggj",
+      "isRead": "1"
+    },
+    {
+      "requestId": "270001",
+      "senderId": "780008",
+      "senderName": "Maria De Nazaré",
+      "content": "Gyuu",
+      "isRead": "1"
+    },
+    {
+      "requestId": "270001",
+      "senderId": "780008",
+      "senderName": "Maria De Nazaré",
+      "content": "Gisiei",
+      "isRead": "1"
+    },
+    {
+      "requestId": "240001",
+      "senderId": "780008",
+      "senderName": "Maria De Nazaré",
+      "content": "0l",
+      "isRead": "1"
+    },
+    {
+      "requestId": "240001",
+      "senderId": "721901",
+      "senderName": "David Portes",
+      "content": "Oi",
+      "isRead": "1"
+    },
+    {
+      "requestId": "240001",
+      "senderId": "780008",
+      "senderName": "Maria De Nazaré",
+      "content": "Oi",
+      "isRead": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "requestId\tsenderId\tsenderName\tcontent\tisRead\n300001\t780008\tMaria De Nazaré\tOk\t1\n300001\t721901\tDavid Portes\tOk\t1\n150002\t720357\tSilvana De Araujo Santana\tOla\t1\n270001\t721901\tDavid Portes\tVbb\t1\n270001\t721901\tDavid Portes\tGhggj\t1\n270001\t780008\tMaria De Nazaré\tGyuu\t1\n270001\t780008\tMaria De Nazaré\tGisiei\t1\n240001\t780008\tMaria De Nazaré\t0l\t1\n240001\t721901\tDavid Portes\tOi\t1\n240001\t780008\tMaria De Nazaré\tOi\t1\n",
+  "stderr": "",
+  "execution_time_ms": 66
+}
